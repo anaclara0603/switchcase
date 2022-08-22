@@ -11,16 +11,33 @@
     */
 
     //ENTRADA
-    const p1 = prompt("tefonou para a vitima? (S|N)")
-    const p2 = prompt("Esteve no local do crime? (S|N)")
-    const p3 = prompt("Mora perto da vítima? (S|N)")
-    const p4 = prompt("Devia para a vítima? (S|N)")
-    const p5 = prompt("Já trabalhou com a vítima? (S|N)")
+    const p1 = parseInt(prompt("tefonou para a vitima? (1-Sim|0-Não)"));
+    const p2 = parseInt(prompt("Esteve no local do crime? (1-Sim|0-Não)"));
+    const p3 = parseInt(prompt("Mora perto da vítima? (1-Sim|0-Não)"));
+    const p4 = parseInt(prompt("Devia para a vítima? (1-Sim|0-Não)"));
+    const p5 = parseInt(prompt("Já trabalhou com a vítima? (1-Sim|0-Não)"));
     
+    const pontos = p1 + p2 + p3 + p4 + p5;
+    let mensage
     //PROCESSAMENTO
-    switch()
+    switch (pontos) {
+        case 0:
+            mensage = "inocente"
+            break;
+        case 1:
+        case 2:
+            mensage = "suspeito"
+            break;
+        case 3:
+        case 4: 
+        mensage = "cumplice"
+        break;
+        default:
+            mensage = "assassino"
+            break;
+    }
 
     
     //SAÍDA
-
+    document.write(mensage)
 </script>
