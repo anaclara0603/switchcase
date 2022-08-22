@@ -4,11 +4,17 @@
     */
 
     //ENTRADA
+    const numr = parseInt(prompt("informe um numero inteiro: "))
+    let mensagem
 
-    
     //PROCESSAMENTO
-
-    
+    switch (numr % 2) {
+        case 0: 
+            mensagem = "par"
+            break;
+        default: 
+        mensagem = "impar"
+    }
     //SAÍDA
-
+document.write(mensagem)
 </script>
