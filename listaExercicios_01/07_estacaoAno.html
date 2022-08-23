@@ -5,11 +5,88 @@
     */
 
     //ENTRADA
-                                                                                                                                                                       
-
+     const hemisferio = prompt("digite s para sul e n para norte: ").toLowerCase()                                                                                                                                                              
+     const mes = prompt("digite o numero do mes: ")
+     let mesMensagem
     //PROCESSAMENTO
 
+    switch(mes){
+        case 1: 
+        case 2: 
+        case 3: 
+            mesEstacao = "verao"
+            break;
+            
+
+        case 4: 
+        case 5: 
+        case 6: 
+            mesEstacao = "outono"
+                break;
+
+        case 7: 
+        case 8:
+        case 9: 
+            mesEstacao = "inverno"
+                break;
+        
+        case 10:
+        case 11: 
+        case 12: 
+            mesEstacao = "primavera"
+    }
+    switch(hemisferio){
+        case "s":
+        case 1: 
+        case 2: 
+        case 3: 
+            mesEstacao = "verao"
+            break;
+            
+
+        case 4: 
+        case 5: 
+        case 6: 
+            mesEstacao = "outono"
+                break;
+
+        case 7: 
+        case 8:
+        case 9: 
+            mesEstacao = "inverno"
+                break;
+        
+        case 10:
+        case 11: 
+        case 12: 
+            mesEstacao = "primavera" 
+
+        case "n":
+            case 1: 
+        case 2: 
+        case 3: 
+            mesEstacao = "inverno"
+            break;
+            
+
+        case 4: 
+        case 5: 
+        case 6: 
+            mesEstacao = "primavra"
+                break;
+
+        case 7: 
+        case 8:
+        case 9: 
+            mesEstacao = "verao"
+                break;
+        
+        case 10:
+        case 11: 
+        case 12: 
+            mesEstacao = "outono"
+    }
     
     //SAÍDA
-
+    document.write(mesEstacao)
 </script>
