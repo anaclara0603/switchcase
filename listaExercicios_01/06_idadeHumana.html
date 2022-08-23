@@ -8,11 +8,28 @@
     // - cães grandes: fator 7.
 
     // ENTRADA
-
-    
+    const caoIdade = parseInt(prompt("informe a idade do seu cao em anos inteiros: "))
+    const caoPorte = prompt("informe o porte do seu cao: ").toLowerCase()
+    let fator
+    let mensage
     // PROCESSAMENTO
-
+    
+    switch (caoPorte) {
+        case "p": 
+            fator = 5
+            break;
+        case "m":
+            fator = 6
+            break;
+        case "g": 
+            fator = 7
+        default:
+            mensage = "nao identificadooooooooooooooooo"
+            break;
+    }
+    const anosCao = fator * caoIdade;
+    mensage = `seu cachorro tem ${anosCao} anos`
     
     // SAÍDA
-
+    document.write(mensage)
     </script>
